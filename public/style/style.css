@@ -1,0 +1,855 @@
+
+/*---------------------------------------homepage--------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&family=Playfair+Display:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300&family=Rubik:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+* , *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+.homepage-main{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 130px;
+    background-color: #f6f6f6;
+}
+a{
+    color: inherit;
+}
+
+.homepage-banner-text{
+    color: white;
+    height: 91vh;
+    text-align: center;
+    padding-top: 25vh;
+    background-color: #000000;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../../public/img/homepage-img/roseBurning.jpg) center center/cover no-repeat ;
+}
+.homepage-banner-text h4{
+    font-family: 'Noto Serif', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.7rem;
+}
+.homepage-banner-text h2{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-family: 'Noto Serif', serif;
+    margin: 1.5rem 0 1.5rem 0;
+    letter-spacing: 2px;
+}
+.banner-date{
+    margin-bottom: 4.8rem;
+}
+.info{
+    font-family: 'Poppins';
+    padding: 5px 10px 5px 10px;
+    color: #303030;
+    background-color: #c7e2e8;
+    border-radius: 4px;
+}
+.info:hover{
+    /*background-color: black;
+    color: white;
+    border: solid white 1px;*/
+    filter: brightness(75%);
+}
+.arrow-info{
+    width: 14px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+.homepage-text{
+    display: flex;
+    align-items: center;
+    padding: 7% 7% 7% 7%;
+    font-family: 'Noto Serif', serif;
+    text-indent: 2em;
+    text-align: center;
+    font-size: 2vw;
+    color: #5f6c6f ;
+    line-height: 1.5;
+    /*height: 89vh;*/
+    background-color: #ffffff;
+}
+.to-discover{
+    background-color: #f6f6f6;
+    padding: 7% 3% 7% 3%;
+}
+.to-discover h4{
+    font-size: 2.9em;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+#homepage-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.hmp-card{
+    width: 28%;
+}
+.hmp-gallery-title h3{
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    z-index: 1;
+    background-color: #c7e2e8;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.hmp-gallery-title h3:hover{
+    cursor: pointer;
+}
+.hmp-img-container{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+}
+#img-ateliers{
+    filter: brightness(100%);
+}
+/*Mettre les images en display block pour éviter qu'elles se comportent par défaut comme du txt et bougent au survol*/
+.homepage-img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.homepage-img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    border-radius: 4px;
+}
+.homepage-gallery h3:hover{
+    cursor: pointer;
+}
+.hmp-card p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.hmp-card h5{
+   font-family: 'Noto Serif'; 
+   font-size: 2em;
+   font-weight: 400;
+   margin-top: 0.4em;
+   margin-bottom: 0.4em;
+   color: #637174;
+}
+.newsletter{
+    background-color: #ffffff;
+    display: flex;
+}
+#newsletter-box{
+    display: flex;
+}
+#newsletter-box input{
+     margin: 6px 0 1em 0; 
+    padding: 5px 10px;
+    border: solid #666666 1px;
+    color: #666666;
+    height: 30px;
+}
+#newsletter-box input:focus{
+     outline: none;
+    box-shadow: 0 0 4px 0 grey;
+}
+.newsletter-form{
+    margin: 2em;
+}
+.newsletter-form p{
+    font-family: 'Poppins';
+    margin-bottom: 3px;
+    color: #666666;
+}
+.news-btn-container{
+    margin-top: 6px;
+    height: 30px;
+    padding-right: 7px;
+    background-color: black;
+    padding-left: 5px;
+}
+.newsletter-arrow{
+    height: 30px;
+}
+.newsletter-text{
+    align-self: center;
+    margin: 2em;
+    font-family: 'Noto Serif';
+    font-size: 1.2em;
+}
+
+/*-----------------------connexion-form-------------------------*/
+#connexion_form_body{
+    background-color: #dddddd;
+}
+.connexion_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    height: 89vh;
+}
+#connexion_form_container{
+    background-color: white;
+    box-shadow: 5px 5px 10px #4c4c4c;
+}
+#connexion_form_container h1{
+    font-size: 2em;
+    color: #303030;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.connexion_picture{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+.text_connexion_form{
+    padding: 1rem 2rem;
+}
+#deconnecter{
+    text-align: center;
+}
+#deconnecter a{
+    color: black;
+    padding: 0.5em;
+    padding-right: 2em;
+}
+.connexion_entree label{
+    display: block;
+    color: #666666;
+}
+.connexion_entree input{
+    margin: 0.5em 0 1em 0; 
+    padding: 5px 10px;
+    border: solid #666666 1px;
+    color: #666666;
+}
+.connexion_entree input:focus{
+    outline: none;
+    box-shadow: 0 0 4px 0 grey;
+}
+.connect-btn{
+    margin-top: 1em;
+    background-color: #c7e2e8;
+    border-radius: 3px;
+    color: black;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+.connect-btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/*-------------------------------------header --------------------------*/
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.nav-title{
+    color: #f1f1f1;
+    margin-left: 0.7em;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: large;
+}
+.navbar{
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #282B2D;
+}
+nav > ul > li{
+    color: #f1f1f1;
+    margin: 1.5em;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+nav > ul > li > a{
+    color: #c7e2e8;
+    /*transition: 0.3 ease;*/
+    position: relative;
+}
+.nav-title-container{
+    display: flex;
+    align-items: center;
+}
+.logoCurtain{
+    width: 25px;
+    margin-left: 15px;
+}                           
+nav > ul > li > a::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #c7e2e8;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    opacity: 0;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+nav > ul > li > a:hover::after{
+    /*text-decoration: underline 1px #f1f1f1;
+    text-underline-offset: 8px;*/
+    opacity: 1;
+    transform: scale(1,1);
+    
+}
+.nav-menu{
+    display: flex;
+    margin-right: 3%;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #c7e2e8;
+}
+
+/*----------------------------la bannière dans l'agenda-----------------------------*/
+
+.banniere{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.imagebanniere{
+    width: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+/*--------------------------------main--------------------------------*/
+
+main {
+    width: 100%;
+    margin-top: 4em;
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 5%;
+    margin-bottom: 2em;
+    font-family: 'Noto Serif', serif;
+    color: #303030;
+}
+.artists-main h1{
+    margin-top: 2.5em;
+    color: #303030;
+}
+.booking-main h1{
+    margin-top: 2.5em;
+    color: #303030;
+}
+.access-main h1{
+    margin-top: 2.5em;
+    color: #303030;
+}
+
+/*---------------------------------footer-----------------------------*/
+
+.footer{
+    /*width: 100vw;*/
+    color: white;
+    background-color: #282B2D;
+    font-family: 'Poppins', sans-serif;
+    bottom: 0;
+    padding: 4% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h3{
+    color: #c7e2e8 ;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+}
+.footer a{
+    cursor: default;
+}
+.col2 a{
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+.col2 a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: default;
+}
+.footer div{
+    text-align: center;
+    font-size: 0.9em;
+}
+.icon{
+    width: 2em;
+    margin: 0.7em;
+    transition: 0.3s;
+}
+.icon:hover{
+    transform: scale(1.3);
+    cursor: default;
+}
+
+/*--------------------------formulaire pour ajouter un artiste-----------------------------*/
+.form-artist-main{
+    height: 40em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.form-artist-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-artist{
+    color: #303030;
+    width: 400px;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+}
+.submit-entree{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+form > h2{
+    text-align: center;
+    color: #303030;
+}
+.form-artist textarea{
+    width: 56%;
+    margin-top: 15px;
+    border: solid grey 1px;
+}
+.form-artist input{
+    border: none;
+    border-bottom: solid grey 1px;
+}
+.form-artist button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 5px 0px 5px;
+}
+.form-artist button:hover{
+    cursor: pointer;
+    
+}
+#reinitialiser{
+    background-color: #795c32;
+}
+#valider{
+    background-color: #479547;
+}
+/*----------------------------------crud artiste-----------------------*/
+#ajouter-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+#editer-container{
+    margin-top: 2em;
+    display: inline;
+    float: left;
+}
+#supprimer-container{
+    margin: 2em;
+    display: inline;
+    float: left;
+}
+.ajouter{
+    padding: 10px 20px;
+    background-color: #479547;
+    color: white;
+    border: none;
+    font-family: Poppins;
+}
+.editer{
+    padding: 10px 20px;
+    background-color: #795c32;
+    color: white;
+    border: none;
+    font-family: Poppins;
+}
+.supprimer{
+    padding: 10px 20px;
+    background-color: #b92c18;
+    color: white;
+    border: none;
+    font-family: Poppins;
+}
+
+/*----------------------------------------------artiste---------------------------------------------------*/
+.artist{
+    display: flex;
+    grid-column-gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.portrait{
+    max-width: 30em;
+}
+.artist-description{
+    text-align: justify;
+}
+.artist-description > h2{
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/*-----------------------------------------------agenda------------------------------------------------------*/
+.date{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 10%;
+    margin: 7% 15% 7% 15%;
+}
+.concert-date{
+    grid-column: 1/4;
+}
+.day{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #d30000;
+}
+.time{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.artist-agenda{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1%;
+}
+.libelle{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1%;
+}
+.concert-description{
+    grid-column: 1/3;
+    text-align: justify;
+}
+.concert-pic{
+    grid-column: 3/4;
+}
+.concert-picture{
+    width: 20em;
+}
+
+/*---------------------------------formulaire pour ajouter un concert------------------------*/
+
+.form-concert{
+    margin: 3em;
+}
+.form-concert .submit-entree{
+    display: flex;
+    flex-direction: column;
+}
+.form-concert label{
+    margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+.form-concert button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 5px 0px 5px;
+}
+.form-concert button:hover{
+    cursor: pointer;
+}
+.form-concert input{
+    border: none;
+    border-bottom: solid grey 1px
+}
+.form-concert input:focus {
+    outline: none;
+}
+
+
+/*---------------------------------------reservations-------------------------------------------------*/
+
+.booking{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-top: 1px solid grey;
+}
+.booking-main{
+     margin-bottom: 3em;
+}
+.booking-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.booking-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking-concert{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.reservation-btn{
+    padding: 10px 20px;
+    background-color: #aa082c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3 ease;
+    font-family: Poppins;
+    box-shadow: 5px 5px 8px grey;
+    border-radius: 3px;
+}
+.reservation-btn:hover{
+   filter: brightness(75%);
+}
+/*------------------------------------------plan d'accès--------------------------------*/
+
+.googlemaps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+
+/*-----------------------------------media queries----------------------*/
+
+
+@media only screen and (max-width:769px){
+    main {
+        margin-top: 4em;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 3em;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #303030;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .homepage-banner-text h4{
+        font-size: 1.1em;
+    }
+    .homepage-banner-text h2{
+        font-size: 2.4em;
+    }
+    /*.homepage-text{
+        font-size: 20px;
+    }*/
+    #homepage-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hmp-card{
+        width: 70%;
+    }
+    .hmp-img-container{
+        width: 100%;
+    }
+    .hmp-card p{
+        margin-bottom: 20px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer h3{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        height: 20%;
+    }
+    .concert-picture{
+        width: 15em;
+    }
+    .booking{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 3em;
+    }
+    .portrait{
+        width: 15em;
+    }
+    .artist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .date{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+    .concert-date{
+        text-align: center;
+        align-self: center;
+    }
+    .concert-pic{
+        align-self: center;
+        margin: 2em;
+    }
+   .agenda-container{
+       margin-top: 6em;
+   } 
+   .img-container{
+       flex-basis: calc(100% / 2);
+   }
+}
+@media only screen and (min-width: 770px) and (max-width: 1030px){
+    .footer{
+        padding: 4% 10%;
+    }
+    .homepage-banner-text h4{
+        font-size: 1.4em;
+    }
+    .homepage-banner-text h2{
+        font-size: 3.3em;
+    }
+    /*.homepage-text{
+        font-size: 30px;
+    }*/
+    #homepage-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hmp-card{
+        width: 70%;
+    }
+    .hmp-img-container{
+        width: 100%;
+    }
+    .hmp-card p{
+        margin-bottom: 20px;
+    }
+    .portrait{
+        width: 20em;
+    }
+    .concert-picture{
+        width: 20em;
+    }
+    .date{
+    grid-column-gap: 10%;
+    margin: 7% 10% 7% 10%;
+    }
+    .img-container{
+    flex-basis: calc(100% / 3);
+    }
+    .booking{
+        grid-template-columns: 1fr;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 3em;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #303030;
+        width: 100%;
+        text-align: center;
+        gap: 0px;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
